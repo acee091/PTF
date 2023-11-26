@@ -1,0 +1,287 @@
+*{
+    list-style: none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: 'Signika';
+}
+
+body.active{
+    background-color: rgb(26, 26, 55);
+    color: #fff;
+}
+body{
+    background-color: #f8f9fa;
+}
+
+.main-container{
+    padding: 120px;
+    width: 40%;
+    margin: 150px auto;
+    position: relative;
+    background-color: #f8f9fa;
+}
+.header-container{
+    margin-left: 60px;
+}
+.profile{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin-left: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile button{
+    border-radius: 50px;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(253, 101, 101);
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.follow i{
+    font-size: 20px;
+    padding: 2px;
+}
+.name-profile{
+    display: flex;
+}
+.name-profile{
+    font-size: 25px;
+}
+.name-profile img{
+    width: 80px;
+}
+.text-profile h3{
+    font-weight: lighter;
+}
+.d1{
+    font-size: 17px;
+}
+.d2{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size: 20px;
+}
+.info-profile ul{
+    display: flex;
+}
+.info-profile i{
+    padding-right: 7px;
+}
+.info-profile li{
+    padding-right: 25px;
+    color: #868e96;
+}
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid black
+}
+.profile button:hover{
+    border: 5px solid black;
+}
+.subscribe{
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+.feed{
+    padding-top: 40px;
+}
+.feed ul{
+    background-color: #f8f9fa;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left:40px;
+    width: 700px;
+}
+.li-feed{
+    border-bottom: 5px solid rgb(253, 101, 101);
+}
+.feed li{
+    /* padding: 20px; */
+    color: #495057;
+    font-weight:700;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feed li:hover{
+    /* background-color: #e9ecef; */
+    /* background-color: #e9ecef; */
+    background-color: #dcdcdc;
+}
+.about{
+    display: flex;
+    align-items: center;
+}
+.name-post{
+    display: flex;
+    padding: 10px
+}
+.nick{
+    padding-right: 10px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.bars-box{
+    position: relative;
+    display: flex;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bars-box h3, span{
+   font-size: 1.1rem;
+   font-weight: 500;
+}
+.bars-box span{
+    padding-left: 1rem;
+}
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 1rem;
+    background: hsla(0, 98%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    background: #000;
+    border-radius: 0.5rem;
+}
+
+.html-bar{
+    width: 190%;
+}
+.css-bar{
+    width: 160%;
+}
+.js-bar{
+    width: 174%;
+}
+.sql-bar{
+    width: 175%;
+}
+.c-bar{
+    width: 179%;
+}
+.git-bar{
+    width: 165%;
+}
+.container-post1{
+    margin-left: 60px;
+    margin-bottom: 70px;
+    max-width: 650px;
+    max-height: 1000px;
+}
+.container-post1:hover{
+    background-color: #e9ecef ;
+}
+.container-post2:hover{
+    background-color: #e9ecef ;
+}
+.about img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.heading img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.dot{
+    color: #495057;
+}
+.date{
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 5px;
+    align-items: center;
+    display: flex;
+    color:#495057;
+}
+.nick{
+    font-size: 20px;
+}
+
+.post{
+    padding-left: 70px;
+    padding-bottom: 6px;
+}
+.post2{
+    padding-left: 70px;
+}
+.container-post2{
+    margin-left: 60px;
+    margin-top: 70px;
+    max-width: 650px;
+    max-height: 1000px;
+}
+.text-post2 h2{
+    font-size: 30px;
+}
+.post h1{
+    font-size: 30px;
+}
+.post img{
+    max-width: 550px;
+}
+.heart{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px;
+}
+.pinned{
+    margin-left:100px;
+}
+.pinned i{
+    padding-right: 17px;
+    font-size: 12px;
+    color:#495057;
+}
+.pinned span{
+    font-size: 15px;
+    color:#495057;
+}
+.post h1, p{
+    padding-bottom: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    padding: 20px;
+    font-size: 30px;
+}
