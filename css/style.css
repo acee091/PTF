@@ -203,6 +203,9 @@ body{
 .container-post2:hover{
     background-color: #e9ecef ;
 }
+.container-post3:hover{
+    background-color: #e9ecef ;
+}
 .about img{
     width:60px;
     height:60px;
@@ -236,8 +239,13 @@ body{
     padding-left: 70px;
     padding-bottom: 6px;
 }
+.post3{
+    padding-left: 70px;
+    padding-bottom: 6px;
+}
 .post2{
     padding-left: 70px;
+    padding-bottom: 60px;
 }
 .container-post2{
     margin-left: 60px;
@@ -284,4 +292,23 @@ footer ul{
 footer ul li{
     padding: 20px;
     font-size: 30px;
+}
+.img-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .img-header img{
+     width: 100%;
+     height:250px;
+ }
+ 
+ .profile img{
+     margin-top: -75px;
+ }
+.container-post3{
+    margin-left: 60px;
+    margin-bottom: 70px;
+    max-width: 650px;
+    max-height: 1000px;
 }
