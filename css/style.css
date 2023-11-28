@@ -6,9 +6,12 @@
     text-decoration: none;
     font-family: 'Signika';
 }
-
+:root{
+    --bg-color: rgb(32, 32, 68);
+    --text-color: #fff;
+}
 body.active{
-    background-color: rgb(26, 26, 55);
+    background-color: rgb(32, 32, 68);
     color: #fff;
 }
 body{
@@ -17,7 +20,7 @@ body{
 
 .main-container{
     padding: 120px;
-    width: 40%;
+    width: 60%;
     margin: 150px auto;
     position: relative;
     background-color: #f8f9fa;
@@ -241,7 +244,6 @@ body{
 }
 .post3{
     padding-left: 70px;
-    padding-bottom: 6px;
 }
 .post2{
     padding-left: 70px;
@@ -255,6 +257,12 @@ body{
 }
 .text-post2 h2{
     font-size: 30px;
+}
+.text-post3 h2{
+    font-size: 30px;
+}
+.text-post3 p{
+    font-size: 20px;
 }
 .post h1{
     font-size: 30px;
@@ -280,6 +288,12 @@ body{
     color:#495057;
 }
 .post h1, p{
+    padding-bottom: 10px;
+}
+.post2 p, h2{
+    padding-bottom: 10px;
+}
+.post3 p, h2{
     padding-bottom: 10px;
 }
 footer{
@@ -310,5 +324,63 @@ footer ul li{
     margin-left: 60px;
     margin-bottom: 70px;
     max-width: 650px;
-    max-height: 1000px;
+    max-height:1000px;
+}
+@media (max-width: 1291px){
+    .feed ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 400px;
+    }
+    .post img{
+        width: 200px;
+    }
+    .html-bar{
+        width: 90%;
+    }
+    .css-bar{
+        width: 60%;
+    }
+    .js-bar{
+        width: 74%;
+    }
+    .sql-bar{
+        width: 75%;
+    }
+    .c-bar{
+        width: 79%;
+    }
+    .git-bar{
+        width: 65%;
+    }
+    .light-bar{
+       width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .main-container{
+        width: 100%;
+    }
+    .feed ul{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 768px){
+    .container-post1{
+        margin-left: 0px;
+        width: 400px;
+        max-height:100%;
+    }
+    .container-post2{
+        margin-left: 0px;
+        width: 400px;
+        max-height:100%;
+    }
+    .container-post3{
+        margin-left: 0px;
+        width: 400px;
+        max-height:100%;
+    }
+
 }
