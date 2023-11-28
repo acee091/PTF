@@ -6,16 +6,24 @@
     text-decoration: none;
     font-family: 'Signika';
 }
-:root{
-    --bg-color: rgb(32, 32, 68);
-    --text-color: #fff;
+html{
+--bg: #f8f9fa;
+--color-text: #000;
+--color-headings: #0077FF;
 }
-body.active{
-    background-color: rgb(32, 32, 68);
+body {
+background-color: var(--bg);
+}
+/* body.active{
+    background-color: #212529;
     color: #fff;
-}
+} */
+/* .main-container:active{
+    background-color: #212529;
+    color: #fff;
+} */
 body{
-    background-color: #f8f9fa;
+    background-color: var(--bg);
 }
 
 .main-container{
@@ -23,7 +31,14 @@ body{
     width: 60%;
     margin: 150px auto;
     position: relative;
-    background-color: #f8f9fa;
+    background-color: var(--bg);
+    color: var(--color-text);
+}
+.main-container a{
+    color: var(--color-text);
+}
+.main-container a:hover{
+    color:var(--color-headings);
 }
 .header-container{
     margin-left: 60px;
@@ -79,7 +94,8 @@ body{
 }
 .info-profile li{
     padding-right: 25px;
-    color: #868e96;
+    /* color: #868e96; */
+    color: var(--color-text)
 }
 .profile img{
     width: 150px;
@@ -99,7 +115,7 @@ body{
     padding-top: 40px;
 }
 .feed ul{
-    background-color: #f8f9fa;
+    background-color: var(--bg);
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -107,12 +123,12 @@ body{
     margin-left:40px;
     width: 700px;
 }
+
 .li-feed{
     border-bottom: 5px solid rgb(253, 101, 101);
 }
 .feed li{
     /* padding: 20px; */
-    color: #495057;
     font-weight:700;
     margin-bottom: 50px;
     width: 150px;
@@ -199,6 +215,7 @@ body{
     margin-bottom: 70px;
     max-width: 650px;
     max-height: 1000px;
+    color: var(--color-text)
 }
 .container-post1:hover{
     background-color: #e9ecef ;
@@ -254,6 +271,7 @@ body{
     margin-top: 70px;
     max-width: 650px;
     max-height: 1000px;
+    color: var(--color-text)
 }
 .text-post2 h2{
     font-size: 30px;
@@ -325,6 +343,47 @@ footer ul li{
     margin-bottom: 70px;
     max-width: 650px;
     max-height:1000px;
+    color: var(--color-text)
+}
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
 }
 @media (max-width: 1291px){
     .feed ul{
