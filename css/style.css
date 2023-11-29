@@ -101,7 +101,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid black
+    border: 5px solid black;
 }
 .profile button:hover{
     border: 5px solid black;
@@ -136,6 +136,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .feed li:hover{
     /* background-color: #e9ecef; */
@@ -281,7 +282,7 @@ body{
     font-size: 30px;
 }
 .text-post3 p{
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -305,6 +306,7 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-right: 35px;
+    cursor: pointer;
 }
 .pinned{
     margin-left:100px;
