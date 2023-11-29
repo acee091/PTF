@@ -1,7 +1,3 @@
-let darmode = document.querySelector("#darkmode");
-let container = document.querySelector('.main-container')
-
-
 const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")
 
@@ -9,7 +5,6 @@ const getStyle = (element, style) =>
     window
         .getComputedStyle(element)
         .getPropertyValue(style)
-
 
 const initialColors = {
     bg: getStyle(html, "--bg"),
