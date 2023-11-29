@@ -25,7 +25,10 @@ background-color: var(--bg);
 body{
     background-color: var(--bg);
 }
-
+.navbar{
+    margin-top: 20px;
+    margin-right: 60px;
+}
 .main-container{
     padding: 120px;
     width: 60%;
@@ -61,6 +64,9 @@ body{
     color: #fff;
     border: none;
     cursor: pointer;
+}
+.profile button a{
+    color: #fff;
 }
 .follow i{
     font-size: 20px;
@@ -291,6 +297,7 @@ body{
 }
 .RS{
     color: rgb(39, 226, 39);
+    font-weight: bold;
 }
 .senac{
     color: #F7941D;
