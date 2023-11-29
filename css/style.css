@@ -250,6 +250,7 @@ body{
     align-items: center;
     display: flex;
     color:#495057;
+    padding-bottom: 8px;
 }
 .nick{
     font-size: 20px;
@@ -281,6 +282,18 @@ body{
 }
 .text-post3 p{
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.text-post3 span{
+    font-size: 20px;
+}
+.RS{
+    color: rgb(39, 226, 39);
+}
+.senac{
+    color: #F7941D;
+    font-weight: bold;
 }
 .post h1{
     font-size: 30px;
